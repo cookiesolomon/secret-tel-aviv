@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #ddd;
@@ -65,7 +69,7 @@ nav li a {
 
   }
   .row {
-
+    
     height: 500px;
   }
   .column {
@@ -82,49 +86,53 @@ nav li a {
 
   
    .column-70 {
-    width: 68%;
+    width: 70%;
     float: left;
-    height: 500px;
-    margin-left: 1%;
-    margin-right: 1%;
     font-family: "Merriweather", serif;
     text-align: center;
     background-color:#c9c3c3;
-    overflow: auto;
-    
+    border: 1px solid red;
+    padding-right: 5px;
   } 
 
   .column-70 img {
    width: 100%; 
-   height: 100%;
+   min-height: 600px;
   
   }
   
   .column-30 {
-    width: 28%;  
+    width: 30%;  
     float: left;
-    height: 500px;
+    height: 680px;
     font-family: "Merriweather", serif;
     text-align: center;
     background-color: #c9c3c3;
-    margin-left: 1%;
-    margin-right: 1%;
+    padding-left: 5px;
     overflow: auto;
-       
+    border: 1px solid red;
   }
+   .column-30 p {
+     font-size: 20px;
+    
+   }
+       
+  
   .bar-bottom {
     width: 100%;
     height: 200px;
     background-color: #ddd;
     margin-top: 20px;
-    margin-left: 1%;
-    margin-right: 1%;
+
     margin-bottom: 20px;
   }
   .bar-bottom img {
-  width: 98%;
+  width: 100%;
   height: 200px;
-  }
+  padding-right: 5px;
+  padding-left: 5px;
+
+  } 
   .row:before {
     display: table;
     content: "";
